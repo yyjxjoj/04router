@@ -1,0 +1,16 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html,body {width: 100%;}
+li {list-style:none;}
+a:link, a:visited {text-decoration:none; color:#000;}
+.clearfix:after {content:""; clear:both; display:block;}
+
+h1 {text-align: center;}
+ul.gnb {margin-bottom: 20px;}
+ul.gnb li {
+  width:calc(100%/3); float:left;
+  text-align: center; line-height: 50px;
+  cursor:pointer;
+  }
+ul.gnb li:hover {background:tan;}
+
+.footer {text-align: center; background: #ccc; padding: 40px;}

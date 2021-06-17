@@ -1,30 +1,45 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+<top-header />
+<router-view :pdata="pdata"></router-view>
+<bottom-footer />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import header from './components/header.vue'
+import pdata from './pdata.js'
+import footer from './components/footer.vue'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  name:'app',
+  components:{
+    'top-header':header,
+    'bottom-footer':footer,
+  },
+  data(){
+    return{
+      pdata:pdata,
     }
   }
 }
+</script>
+
+<style>
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html,body {width: 100%;}
+li {list-style:none;}
+a:link, a:visited {text-decoration:none; color:#000;}
+.clearfix:after {content:""; clear:both; display:block;}
+
+h1 {text-align: center;}
+ul.gnb {margin-bottom: 20px;}
+ul.gnb li {
+  width:calc(100%/3); float:left;
+  text-align: center; line-height: 50px;
+  cursor:pointer;
+  }
+ul.gnb li:hover {background:tan;}
+
+.footer {background: #eee; padding: 40px;}
+.footer h6 {font-weight: bold;}
 </style>
