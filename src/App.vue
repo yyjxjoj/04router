@@ -24,9 +24,7 @@ export default {
 </script>
 
 <style>
-
 * {margin: 0; padding: 0; box-sizing: border-box;}
-html,body {width: 100%;}
 li {list-style:none;}
 a:link, a:visited {text-decoration:none; color:#000;}
 .clearfix:after {content:""; clear:both; display:block;}

@@ -1,5 +1,5 @@
 <template>
-<swiper :pagination="true" class="mySwiper">
+<swiper :pagination="true" class="mySwiper mb-5">
   <swiper-slide><img src="image/slider01.jpg" alt=""></swiper-slide>
   <swiper-slide><img src="image/slider02.jpg" alt=""></swiper-slide>
   <swiper-slide><img src="image/slider03.jpg" alt=""></swiper-slide>
@@ -7,7 +7,7 @@
   <swiper-slide><img src="image/slider05.jpg" alt=""></swiper-slide>
   </swiper>
 
-  <div class="container m-5 ml-auto">
+  <div class="container">
     <div class="best mb-5">
       <h2 class="py-3">BEST PRODUCT</h2>
       <p>발송일로부터 3일 이내 로스팅된 원두로 보내드립니다.</p>
